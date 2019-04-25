@@ -325,7 +325,7 @@ class Snake extends React.Component{
 		document.addEventListener('keydown',(event)=>{
 			this.updateVelocity(event);
 		})
-		this.speed=600;
+		this.speed=500;
 		setTimeout(()=>{
 			this.moveSnake()
 		},this.speed);
@@ -349,17 +349,17 @@ class Snake extends React.Component{
 							<h1 className="header">Your score is: {this.state.tail.length}
 							</h1>
 							<button className="button" 
-								onClick={(e)=>{this.startNewGame(600)}}
+								onClick={(e)=>{this.startNewGame(500)}}
 							>
 							Level 1
 							</button>
 							<button className="button" 
-								onClick={(e)=>{this.startNewGame(400)}}
+								onClick={(e)=>{this.startNewGame(300)}}
 							>
 							Level 2
 							</button>
 							<button className="button" 
-								onClick={(e)=>{this.startNewGame(200)}}
+								onClick={(e)=>{this.startNewGame(100)}}
 							>
 							Level 3
 							</button>
