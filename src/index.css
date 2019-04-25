@@ -1,14 +1,104 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+.app{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.grid{
+	width:500px;
+	height: 500px;
+}
+
+.cell{
+	width:25px;
+	height:25px;
+	outline:2px solid #000000d1;
+	display: inline-block;
+
+}
+
+.apple{
+	background: red;
+}
+
+.head{
+	background: blue;
+}
+
+.tail{
+	background: lightblue;
+}
+
+.header{
+	
+	margin: 16px 0;
+}
+
+.button{
+	background: blue;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-bottom: 3px solid lightblue;
+	padding: 10px;
+	border-radius: 20px;
+
+}
+
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 100px 300px;
+	flex-direction: column;
+	overflow: none;
+	height: 300px;
+}
+
+.form__mainForm{
+	display: flex;
+	flex-direction: column;
+}
+.form__input{
+	margin: 0 0 5px 0;
+	outline: none;
+	border: 2px solid darkblue;
+	padding: 10px;
+	color:red;
+	font-size: 20px;
+}
+
+
+.leaderBoard{
+	display: inline-block;
+	position: relative;
+	right: 25%;	
+}
+
+.leaderBoard__element{
+	display: flex;
+	flex-direction: row;
+
+}
+.box{
+	display: flex;
+}
+
+.bestScore{
+	font-size: 20px;
+    position: absolute;
+    right: 38px;
+    font-style: italic;
+
+}
+
+.box__bestScore{
+	font-size: 20px;
+    position: relative;
+    left: 186px;
+    font-style: italic;
 }
